@@ -1,7 +1,6 @@
 import React from 'react';
 import { connect } from 'dva';
-import {Button} from 'antd';
-import { routerRedux ,Link} from 'dva/router';
+import { Link} from 'dva/router';
 import styles from './index.less';
 
 function IndexPage() {
