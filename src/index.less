@@ -1,0 +1,17 @@
+
+//我们可以使用:global(className)来标识这个类是全局类名，
+//因此CSS Modules不对其类名进行转化，
+//:local(className)则相反，如果不用这两个包裹的话，默认是local.
+//默认开启了css Modules
+
+html, body, :global(#root) {
+  height: 100%;
+}
+:global(.bgRed){
+  background-color: #f00; 
+}
+:global{
+  .mb15{
+    margin-bottom: 15px;
+  }
+}

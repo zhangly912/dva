@@ -1,0 +1,7 @@
+{
+  "extends": "umi",
+  "rules":{
+    "strict":0, 
+    "eqeqeq":0 
+  }
+}
