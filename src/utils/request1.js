@@ -2,9 +2,10 @@ import axios from 'axios';
 import qs from 'qs'; //处理post请求传参数问题 序列化参数
 import {getStorage} from './utils';
 import { message } from 'antd';
+import baseURL  from './env';
 
 
-let baseURL = 'https://bp-backend-test.wxb.com.cn/';
+// let baseURL = 'https://bp-backend-test.wxb.com.cn/';
 
 let xhr = ({ url,body,method,returnAll,loading,contentType}) => {
   let _obj = {

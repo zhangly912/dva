@@ -32,7 +32,14 @@ export default {
     ],
     "hash":true, //打包文件加上hash 
     //不使用public下面的模板 因为不会替换引入
-    "html": { "template": "./src/index.ejs" } 
+    "html": { "template": "./src/index.ejs" },
+    "proxy": {
+        "/api": {
+          "target": "https://bp-backend-test.wxb.com.cn/",
+          "changeOrigin": true,
+          "pathRewrite": { "^/api" : "" }
+        }
+      }
 
 
     // "disableCSSModules": true
